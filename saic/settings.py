@@ -38,12 +38,8 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'gitpaste',
-        'USER': 'justinvh',
-        'PASSWORD': 'enterthe',
-        'HOST': 'localhost',
-        'PORT': '',
     }
 }
 
