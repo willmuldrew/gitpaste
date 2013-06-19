@@ -31,7 +31,7 @@ TEMPLATE_DEBUG = DEBUG
 AUTH_PROFILE_MODULE = "paste.Profile"
 
 ADMINS = (
-        ('Justin Bruce Van Horne', 'JUSTIN.B.VAN.HORNE@saic.com'),
+        ('Will Muldrew', 'will.muldrew@gsacapital.com'),
 )
 
 MANAGERS = ADMINS
