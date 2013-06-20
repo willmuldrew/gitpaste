@@ -14,3 +14,9 @@ class TimezoneMiddleware(object):
             tz = request.user.preference.timezone
             if tz:
                 activate(tz)
+
+
+from django.contrib.auth.middleware import RemoteUserMiddleware
+
+class CustomHeaderMiddleware(RemoteUserMiddleware):
+    header = 'HTTP_X_REMOTE_USER'

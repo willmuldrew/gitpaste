@@ -120,6 +120,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'saic.paste.middleware.CustomHeaderMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'saic.paste.middleware.TimezoneMiddleware',
 )
@@ -180,4 +181,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
         'saic.context_processors.use_tz',
         'saic.context_processors.use_icon',
         'saic.context_processors.site',
+)
+
+AUTHENTICATION_BACKENDS = (
+    'saic.paste.auth.backends.CustomHeaderBackend',
 )
